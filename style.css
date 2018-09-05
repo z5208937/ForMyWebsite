@@ -1,1 +1,10 @@
-
+body {
+Margin: 0;
+Padding: 0;
+}
+#map {
+Position: absolute;
+Top: 0;
+Bottom: 0;
+Width: 100%;
+}
