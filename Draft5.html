@@ -9,20 +9,21 @@
     <script src="Part3.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
     <style>
-        body { margin:0; padding:0; }
-        #map {width:50%; height: 400px; float: left;}
-        #map2 {width:50%; height: 400px; margin-left: 50%;}
+        body { margin:0; padding:0; float:center; }
+        #map {width:50%; height: 400px; float:left;}
+        #map2 {width:50%; height: 400px; margin-left: 50%}
     </style>
 </head>
 <body>
 
 <div id='map'></div>
 <div id='map2'></div>
+
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoib2ZmaWNpYWx6ZXJvIiwiYSI6ImNqbHAydHp5bTIwZm0za2ttZGN0aDJtdzgifQ.eVAm7pdGyrcJp1rmGrERaA';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+    style: 'mapbox://styles/mapbox/light-v9', // stylesheet location
     center: [151.004105, -33.813002], // starting position [lng, lat]
     pitch: 45,
     bearing: -17.6,
@@ -39,36 +40,36 @@ map.addLayer({
 },
 'paint': {
 'fill-extrusion-color' : {
-'property': 'LanguageE4',
+'property': 'LanguageE1',
 "stops":[
 [0, '#000000'],
-[8, '#570f6d'],
-[25, '#bb3754'],
-[49,'#fa8d0a'],
-[95,'#fcffa4'],
-[176,'#B8FF08'],
+[26, '#570f6d'],
+[56, '#bb3754'],
+[97,'#fa8d0a'],
+[298,'#fcffa4'],
+[676,'#B8FF08'],
 ]
 },
 'fill-extrusion-height' : {
-'property': 'IncomeE4',
+'property': 'IncomeE1',
 "stops":[
 [0, 0],
-[176, 5000]
+[676, 5000]
 ]
 },
 'fill-extrusion-opacity': 1
 }
 });
-});
+});     
 
-var maptwo = new mapboxg1.Map({
+var maptwo = new mapboxgl.Map({
     container: 'map2', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+    style: 'mapbox://styles/mapbox/light-v9', // stylesheet location
     center: [151.004105, -33.813002], // starting position [lng, lat]
     pitch: 45,
     bearing: -17.6,
     zoom: 9 // starting zoom
-});
+}); 
 
 maptwo.on('load', function() {
 maptwo.addLayer({
@@ -102,6 +103,7 @@ maptwo.addLayer({
 });
 });
 </script>
+
 
 </body>
 </html>
