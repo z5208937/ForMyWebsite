@@ -11,12 +11,13 @@
     <style>
         body { margin:0; padding:0; }
         #map {width:50%; height: 400px; float: left; }
-        #map2 {width:50%; height: 400px; margin-left: 50%; }
+        #map2 {width:50%; height: 400px; margin-left: 50%}
     </style>
 </head>
 <body>
 
 <div id='map'></div>
+<div id='map2'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoib2ZmaWNpYWx6ZXJvIiwiYSI6ImNqbHAydHp5bTIwZm0za2ttZGN0aDJtdzgifQ.eVAm7pdGyrcJp1rmGrERaA';
 var map = new mapboxgl.Map({
@@ -53,6 +54,47 @@ map.addLayer({
 "stops":[
 [0, 0],
 [176, 5000]
+]
+},
+'fill-extrusion-opacity': 1
+}
+});
+});
+
+var maptwp = new mapboxgl.Map({
+    container: 'map2', // container id
+    style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+    center: [151.004105, -33.813002], // starting position [lng, lat]
+    pitch: 45,
+    bearing: -17.6,
+    zoom: 9 // starting zoom
+});
+
+maptwo.on('load', function() {
+maptwo.addLayer({
+"id": "data2",
+"type": "fill-extrusion",
+"source": {
+'type': 'geojson',
+'data': data2
+},
+'paint': {
+'fill-extrusion-color' : {
+'property': 'LanguageE3',
+"stops":[
+[0, '#000000'],
+[13, '#570f6d'],
+[37, '#bb3754'],
+[72,'#fa8d0a'],
+[216,'#fcffa4'],
+[642,'#B8FF08'],
+]
+},
+'fill-extrusion-height' : {
+'property': 'IncomeE3',
+"stops":[
+[0, 0],
+[642, 5000]
 ]
 },
 'fill-extrusion-opacity': 1
