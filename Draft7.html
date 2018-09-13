@@ -5,8 +5,8 @@
     <title>MapTwo</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
-    <script src='./data.js'></script>
-    <script src='./data2.js'></script>
+    <script src='./data3.js'></script>
+    <script src='./data4.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; float:center; }
@@ -40,22 +40,22 @@ map.on('load', function() {
         },
            'paint': {
                 'fill-extrusion-color' : {
-                    'property': 'LanguageE1',
+                    'property': 'LanguageE2',
                     "stops":[
                        [0, '#000000'],
-                        [26, '#570f6d'],
-                        [56, '#bb3754'],
-                        [97,'#fa8d0a'],
-                        [298,'#fcffa4'],
-                        [676,'#B8FF08'],
+[21, '#570f6d'],
+[45, '#bb3754'],
+[69,'#fa8d0a'],
+[102,'#fcffa4'],
+[258,'#B8FF08'],
 ]
                     
                 },
                 'fill-extrusion-height' : {
-                    'property': 'IncomeE1',
+                    'property': 'IncomeE2',
                     "stops":[
                         [0, 0],
-                        [676, 5000]
+[258, 5000]
                     ]
                 },
                  'fill-extrusion-opacity': 1
@@ -81,21 +81,21 @@ maptwo.on('load', function() {
         },
            'paint': {
                 'fill-extrusion-color' : {
-                    'property': 'LanguageE3',
+                    'property': 'LanguageE4',
                     "stops":[
-                        [0, '#000000'],
-                        [13, '#570f6d'],
-                        [37, '#bb3754'],
-                        [72,'#fa8d0a'],
-                        [216,'#fcffa4'],
-                        [642,'#B8FF08'],
+                      [0, '#000000'],
+[8, '#570f6d'],
+[25, '#bb3754'],
+[49,'#fa8d0a'],
+[95,'#fcffa4'],
+[176,'#B8FF08'],
                         ]
                 },
                 'fill-extrusion-height' : {
-                    'property': 'IncomeE3',
+                    'property': 'IncomeE4',
                     "stops":[
                         [0, 0],
-                        [642, 5000]
+                        [176, 5000]
                     ]
                 },
                  'fill-extrusion-opacity': 1
