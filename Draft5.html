@@ -10,8 +10,8 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
-        #map {width:50%; height: 400px; float: left; }
-        #map2 {width:50%; height: 400px; margin-left: 50%}
+        #map {width:50%; height: 400px; float: left;}
+        #map2 {width:50%; height: 400px; margin-left: 50%;}
     </style>
 </head>
 <body>
@@ -61,7 +61,7 @@ map.addLayer({
 });
 });
 
-var maptwp = new mapboxgl.Map({
+var map2 = new mapboxg1.Map({
     container: 'map2', // container id
     style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
     center: [151.004105, -33.813002], // starting position [lng, lat]
@@ -70,8 +70,8 @@ var maptwp = new mapboxgl.Map({
     zoom: 9 // starting zoom
 });
 
-maptwo.on('load', function() {
-maptwo.addLayer({
+map2.on('load', function() {
+map2.addLayer({
 "id": "data2",
 "type": "fill-extrusion",
 "source": {
