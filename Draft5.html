@@ -61,7 +61,7 @@ map.addLayer({
 });
 });
 
-var map2 = new mapboxg1.Map({
+var maptwo = new mapboxg1.Map({
     container: 'map2', // container id
     style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
     center: [151.004105, -33.813002], // starting position [lng, lat]
@@ -70,8 +70,8 @@ var map2 = new mapboxg1.Map({
     zoom: 9 // starting zoom
 });
 
-map2.on('load', function() {
-map2.addLayer({
+maptwo.on('load', function() {
+maptwo.addLayer({
 "id": "data2",
 "type": "fill-extrusion",
 "source": {
