@@ -31,36 +31,35 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function() {
-    map.addLayer({
-        "id": "data",
-        "type": "fill-extrusion",
-        "source": {
-            'type': 'geojson',
-            'data': data
-        },
-           'paint': {
-                'fill-extrusion-color' : {
-                    'property': 'LanguageE2',
-                    "stops":[
-                       [0, '#000000'],
+map.addLayer({
+"id": "data",
+"type": "fill-extrusion",
+"source": {
+'type': 'geojson',
+'data': data
+},
+'paint': {
+'fill-extrusion-color' : {
+'property': 'LanguageE2',
+"stops":[
+[0, '#000000'],
 [21, '#570f6d'],
 [45, '#bb3754'],
 [69,'#fa8d0a'],
 [102,'#fcffa4'],
 [258,'#B8FF08'],
 ]
-                    
-                },
-                'fill-extrusion-height' : {
-                    'property': 'IncomeE2',
-                    "stops":[
-                        [0, 0],
+},
+'fill-extrusion-height' : {
+'property': 'IncomeE2',
+"stops":[
+[0, 0],
 [258, 5000]
-                    ]
-                },
-                 'fill-extrusion-opacity': 1
-            }
-    });
+]
+},
+'fill-extrusion-opacity': 1
+}
+});
 });
 
 var maptwo = new mapboxgl.Map({
@@ -95,7 +94,7 @@ maptwo.on('load', function() {
                     'property': 'IncomeE4',
                     "stops":[
                         [0, 0],
-                        [176, 5000]
+                        [176, 5000],
                     ]
                 },
                  'fill-extrusion-opacity': 1
