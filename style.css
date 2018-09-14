@@ -7,6 +7,7 @@
 body
 {
     font-family: monospace;
+
 }
 .row
 {
@@ -62,7 +63,7 @@ h2 {
     text-transform: uppercase;
     font-size: 60px;
     text-align: center;
-    margin-top: 275px;
+    margin-top: 150px;
     float: center;
     
 }
@@ -84,6 +85,15 @@ h4 {
     margin-right: 250px;
 }
 
+h5 {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    float: center;
+    
+}
 
 header
 {
@@ -99,8 +109,7 @@ header
     background-image:url(Background2.jpg);
     min-height: 100%;
     background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: fixed;
 }
 .logo img
 {
@@ -166,4 +175,8 @@ Position: absolute;
 Top: 500;
 Bottom: 0;
 Width: 80%;
+}
+
+.Image1 {
+    margin-left:50%;
 }
