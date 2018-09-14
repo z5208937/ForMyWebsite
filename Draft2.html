@@ -8,12 +8,81 @@
     <script src="data3.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        body { background-color: black; margin:0; padding:0; }
+        #map { position:absolute; top:150px; bottom:0; width:100%; }
+        .row
+{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li.active a
+{
+    border: 3px solid #FFFFFF;
+    
+}
+
+.main-nav li a:hover
+{
+    border: 3px solid #FFFFFF;
+}
+
+
+.main-nav li a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 35px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: bold;
+}
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float: left;
+    
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Background2.jpg);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
     </style>
 </head>
 <body>
-
+<header>
+    <div class="row">
+          <div class="logo">
+          <img src="CODE Logo.jpg">
+                    </div>
+          <ul class="main-nav">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="Analysis.html"> Analysis </a></li>
+              <li><a href="Draft.html"> Map1 </a></li>
+              <li><a href="Draft3.html"> Map2 </a></li>
+              <li class="active"><a href="Draft2.html"> Map3 </a></li>
+              <li><a href="Draft4.html"> Map4 </a></li>
+              <li><a href="DWN.html"> Credits/Downloads</a></li>
+     </ul>
+  </div>
+  </div>
+</header>
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoib2ZmaWNpYWx6ZXJvIiwiYSI6ImNqbHAydHp5bTIwZm0za2ttZGN0aDJtdzgifQ.eVAm7pdGyrcJp1rmGrERaA';
